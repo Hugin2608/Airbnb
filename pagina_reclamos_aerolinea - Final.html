@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyland Airlines - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --hyland-blue: #007398;
+      --hyland-dark-blue: #004e6e;
+      --hyland-light-gray: #f0f4f8;
+      --hyland-background: #f5f7fa;
+      --hyland-text: #1b365d;
+      --hyland-primary-text: #2c2f34;
+      --hyland-header-dark: #2c1a47;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--hyland-light-gray);
+      color: var(--hyland-primary-text);
+    }
+    .top-header {
+      background: linear-gradient(90deg, #d6b3f2, #c5f2d2, #fff7cc);
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e1e5eb;
+    }
+    .top-header .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .top-header .left img {
+      height: 30px;
+    }
+    .btn-header {
+      background-color: transparent;
+      color: var(--hyland-blue);
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid var(--hyland-blue);
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-left: 10px;
+      transition: all 0.3s ease;
+    }
+    .btn-header:hover {
+      background-color: var(--hyland-blue);
+      color: #fff;
+    }
+    .banner {
+      background-image: url('nyc2.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    .btn-custom {
+      background-color: var(--hyland-blue);
+      color: white;
+      border-radius: 8px;
+      padding: 12px 30px;
+      font-weight: 600;
+      font-size: 18px;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: var(--hyland-dark-blue);
+    }
+    .main-section {
+      text-align: center;
+    }
+    .main-section h2 {
+      color: var(--hyland-text);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .main-section p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .form-wrapper {
+      background-color: var(--hyland-light-gray);
+      padding: 60px 20px;
+    }
+    .form-section {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .form-label {
+      font-weight: 600;
+      color: var(--hyland-text);
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-header">
+  <div class="left">
+    <img src="hyland logo nuevo2" alt="Hyland Logo" style="height: 60px;">
+    <span class="fw-bold text-white" style="font-size: 1.5rem;">Hyland Airlines</span>
+  </div>
+  <div>
+    <button class="btn-header">INGRESE</button>
+    <button class="btn-header">UNIRSE</button>
+  </div>
+</div>
+
+<div class="search-bar bg-white py-4 shadow-sm position-relative z-3 border rounded-4 mx-3 mt-3" style="margin-top: -20px; z-index: 2; padding: 30px;">
+  <div class="container">
+    <div class="row g-3 align-items-center">
+      <div class="col-md-3">
+        <label class="form-label fw-bold">Desde</label>
+        <input type="text" class="form-control" placeholder="Ingresa un origen">
+      </div>
+      <div class="col-md-1 text-center">
+        <span class="fs-3">⇄</span>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label fw-bold">Hacia</label>
+        <input type="text" class="form-control" placeholder="Ingresa un destino">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label fw-bold">Tipo de viaje</label>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-primary btn-sm active">Ida y vuelta</button>
+          <button class="btn btn-outline-secondary btn-sm">Solo ida</button>
+        </div>
+      </div>
+      <div class="col-md-2 text-end">
+        <button class="btn btn-primary w-100">Buscar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="banner">
+  <h1>Hyland Airlines</h1>
+</div>
+
+<section class="main-section" style="margin-top: 2cm;">
+  <div class="container">
+    <h2>¿Tuviste algún inconveniente?</h2>
+    <p class="mb-4">Estamos aquí para ayudarte. Por favor llena el formulario para reportar tu experiencia.</p>
+    <a href="#formularioReclamo" class="btn btn-custom">Iniciar Reclamo</a>
+  </div>
+</section>
+
+<section id="formularioReclamo" class="form-wrapper">
+  <div class="form-section">
+    <h3 class="mb-4 text-center" style="color: var(--hyland-blue);">Formulario de Reclamo</h3>
+    <form>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono de contacto</label>
+        <input type="tel" class="form-control" id="telefono">
+      </div>
+      <div class="mb-3">
+        <label for="asunto" class="form-label">Asunto del reclamo</label>
+        <input type="text" class="form-control" id="asunto">
+      </div>
+      <div class="mb-3">
+        <label for="tipoProblema" class="form-label">Tipo de problema</label>
+        <select class="form-select" id="tipoProblema">
+          <option value="equipaje">Problema con equipaje</option>
+          <option value="demora">Demora del vuelo</option>
+          <option value="cancelacion">Cancelación</option>
+          <option value="servicio">Servicio a bordo</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="documentoAdjunto" class="form-label">Adjuntar documento (PDF, imagen u otro)</label>
+        <input class="form-control" type="file" id="documentoAdjunto" accept=".pdf, .jpg, .jpeg, .png, .doc, .docx">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" required>
+      </div>
+      <div class="mb-3">
+        <label for="vuelo" class="form-label">Número de vuelo</label>
+        <input type="text" class="form-control" id="vuelo" required>
+      </div>
+      <div class="mb-3">
+        <label for="fecha" class="form-label">Fecha del vuelo</label>
+        <input type="date" class="form-control" id="fecha" required>
+      </div>
+    </div>
+  </div>
+  
+    <div class="mb-3">
+      <label for="descripcion" class="form-label">Descripción del reclamo</label>
+      <textarea class="form-control" id="descripcion" rows="10" required></textarea>
+    </div>
+  </div>
+</div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-custom px-5">Enviar Reclamo</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
